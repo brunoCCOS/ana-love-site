@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Você, Ana Luiza 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+  <canvas id="hearts-canvas" aria-hidden="true"></canvas>
+
+  <main id="app" role="main">
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Para Você, Ana Luiza</h1>
+        <p class="hero-subtitle">do amor mais lindo do meu universo</p>
+        <div class="scroll-indicator">
+          <span>Desça para ver</span>
+          <div class="arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counter-section" id="counter">
+      <h2 class="section-title">Nosso Tempo Juntos</h2>
+      <div class="counter-grid" id="counter-grid">
+        <div class="counter-item">
+          <span class="counter-value" id="counter-years">0</span>
+          <span class="counter-label">Anos</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-months">0</span>
+          <span class="counter-label">Meses</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-days">0</span>
+          <span class="counter-label">Dias</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-hours">0</span>
+          <span class="counter-label">Horas</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-minutes">0</span>
+          <span class="counter-label">Minutos</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-seconds">0</span>
+          <span class="counter-label">Segundos</span>
+        </div>
+      </div>
+      <p class="counter-note">e contando cada segundo 💕</p>
+    </section>
+
+    <section class="letter-section" id="letter">
+      <h2 class="section-title">Carta de Amor</h2>
+      <div class="letter-content">
+        <div class="letter-body" id="letter-body"></div>
+      </div>
+    </section>
+
+    <section class="reasons-section" id="reasons">
+      <h2 class="section-title">O Que Eu Amo em Você</h2>
+      <div class="reasons-grid" id="reasons-grid"></div>
+    </section>
+
+    <section class="closing-section" id="closing">
+      <h2 class="closing-title">Eu Te Amo, Ana Luiza</h2>
+      <p class="closing-text">
+        Hoje, amanhã e para toda a eternidade.
+        Você é o amor da minha vida. 💕
+      </p>
+      <div class="infinity-symbol">∞</div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
