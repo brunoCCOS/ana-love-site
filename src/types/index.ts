@@ -37,6 +37,19 @@ export interface LoveReason {
 }
 
 /**
+ * Memória vivida ou próximo plano (seção "Nossa História").
+ */
+export interface Memory {
+  icon: string;
+  title: string;
+  description: string;
+  /** Rótulo de data exibido no card (ex.: "Corrida: 08/11/2026"). */
+  dateLabel?: string;
+  /** Data do evento — habilita a contagem regressiva ao vivo nos planos. */
+  date?: Date;
+}
+
+/**
  * Configuração de animações CSS via JS.
  */
 export interface AnimationConfig {

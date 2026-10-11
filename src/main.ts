@@ -6,6 +6,7 @@ import { HeartsCanvas } from './components/HeartsCanvas.js';
 import { LoveCounter } from './components/LoveCounter.js';
 import { LoveLetter } from './components/LoveLetter.js';
 import { LoveReasons } from './components/LoveReasons.js';
+import { Memories } from './components/Memories.js';
 import type { DateConfig } from './types/index.js';
 
 /**
@@ -27,12 +28,14 @@ class LoveApp {
   private loveCounter: LoveCounter;
   private loveLetter: LoveLetter;
   private loveReasons: LoveReasons;
+  private memories: Memories;
 
   constructor() {
     this.heartsCanvas = new HeartsCanvas();
     this.loveCounter = new LoveCounter(APP_CONFIG);
     this.loveLetter = new LoveLetter();
     this.loveReasons = new LoveReasons();
+    this.memories = new Memories();
 
     this.setupScrollAnimations();
 
@@ -41,6 +44,10 @@ class LoveApp {
 
     // Render os cards de motivos de amor
     this.loveReasons.render();
+
+    // Render memórias e planos + inicia o countdown ao vivo
+    this.memories.render();
+    this.memories.start();
 
     console.log('💕 App initialized successfully');
   }
