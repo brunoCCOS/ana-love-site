@@ -34,6 +34,12 @@ const NEXT_PLANS: Memory[] = [
     // Aproximadamente o horário do lights-out em Interlagos — confirme a programação oficial.
     date: new Date(2026, 10, 8, 15, 0, 0),
   },
+  {
+    icon: '⛺',
+    title: 'Acampar Juntos',
+    description:
+      'Uma noite sob as estrelas, longe de tudo, só nós dois — e a data, a gente escolhe do nosso jeito.',
+  },
 ];
 
 /**
@@ -64,6 +70,12 @@ function buildCard(item: Memory, kind: 'memory' | 'plan', delay: number): HTMLEl
     const label = document.createElement('span');
     label.className = 'memory-date';
     label.textContent = item.dateLabel;
+    card.appendChild(label);
+  } else if (kind === 'plan') {
+    // Plano sem data ainda: mostra um selo discreto.
+    const label = document.createElement('span');
+    label.className = 'memory-date memory-date--tbd';
+    label.textContent = '🗓️ a combinar';
     card.appendChild(label);
   }
 

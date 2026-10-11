@@ -30,6 +30,11 @@ const LOVE_REASONS: LoveReason[] = [
     description: 'O meu lugar favorito no mundo inteiro.',
   },
   {
+    icon: '🎾',
+    title: 'Seu Forehand',
+    description: 'Na quadra e na vida: preciso, leve e sempre certeiro. Meu favorito.',
+  },
+  {
     icon: '💫',
     title: 'Seu Jeito de Me Aconselhar',
     description: 'Com você, até os dias difíceis ficam mais leves.',
